@@ -1,0 +1,62 @@
+|FOURBITADD
+a[0] => FULLADDER:FA0.a
+a[1] => FULLADDER:FA1.a
+a[2] => FULLADDER:FA2.a
+a[3] => FULLADDER:FA3.a
+b[0] => FULLADDER:FA0.b
+b[1] => FULLADDER:FA1.b
+b[2] => FULLADDER:FA2.b
+b[3] => FULLADDER:FA3.b
+Cin => FULLADDER:FA0.c
+sum[0] <= FULLADDER:FA0.sum
+sum[1] <= FULLADDER:FA1.sum
+sum[2] <= FULLADDER:FA2.sum
+sum[3] <= FULLADDER:FA3.sum
+Cout <= FULLADDER:FA3.carry
+V <= V.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FOURBITADD|FULLADDER:FA0
+a => sum.IN0
+a => carry.IN0
+b => sum.IN1
+b => carry.IN1
+c => sum.IN1
+c => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FOURBITADD|FULLADDER:FA1
+a => sum.IN0
+a => carry.IN0
+b => sum.IN1
+b => carry.IN1
+c => sum.IN1
+c => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FOURBITADD|FULLADDER:FA2
+a => sum.IN0
+a => carry.IN0
+b => sum.IN1
+b => carry.IN1
+c => sum.IN1
+c => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FOURBITADD|FULLADDER:FA3
+a => sum.IN0
+a => carry.IN0
+b => sum.IN1
+b => carry.IN1
+c => sum.IN1
+c => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
